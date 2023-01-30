@@ -6,10 +6,18 @@ Student: Peyman Peyvandi Pour  - 5573284 - Robotics Engineering
 
 First assignment of Research Track 1 course
 ------------
-[TOC]
+Table of content:
+
+- [Aims of the assignment](#aims-of-the-assignment)
+- [Installing and running](#installing-and-running)
+- [How it works](#how-it-works)
+- [Possible improvements](#possible-improvements)
 
 
-## Aims of the assignment:
+
+
+
+## Aims of the assignment
 
 A simple, portable robot simulator is developed by [Student Robotics](https://studentrobotics.org).
 An arena has been modified for the first assignment of the Research Track I course.
@@ -83,4 +91,7 @@ Also, on the terminal, some messages are displayed while the robot is in operati
 <p align="center">
   <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/My%20project-1.png?raw=true" />
 </p>
-## possible improvements
+
+## Possible improvements
+1. The project can be improved by implementing an algorithm that finds the nearest token instead of finding them randomly
+1. There are some occasions where the robot pushes other tokens, which makes the arrangement of tokens inappropriate. An improvement could be to avoid obstacles in the path of the robot while it is in motion
