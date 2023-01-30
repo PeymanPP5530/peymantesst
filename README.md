@@ -46,24 +46,41 @@ Now, run the simulation:
 python2 run.py assignment.py
 ```
 The following simulation will be show:
->  ![initial](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/initial.png?raw=true "initial")
+
+<p align="center">
+  <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/initial.png?raw=true" />
+</p>
+
 
 ## How it works
 In order to accomplish the assignment, the robot will look for tokens in front of it and grab the nearest one. Once the robot has grabbed the silver token, it will look for a gold token in front of it, move near it, and release the silver token once it is close enough. Silver tokens will be placed next to gold tokens until every silver token is next to a different gold token.
 
 The flowchart of the algorithm is:
-> ![flowchart](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/flowchart.jpg?raw=true "flowchart")
+<p align="center">
+  <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/flowchart.jpg?raw=true" />
+</p>
+
 
 As we can see in the images, the robot performs the following actions to achieve the goal of the assignment:
 
 1. Robot is in its initial position:
-![initial](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/initial.png?raw=true "initial")
-
-1. Robot grabbed a silver token:
-![grab silver token](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/grab.png?raw=true "grab silver token")
-
-1. Robot release a silver token next to a silver token:
-![release](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/release.png?raw=true "release")
-
-1. Ultimately, each silver token is placed next to a gold token
-![final](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/final.png?raw=true "final")
+<p align="center">
+  <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/initial.png?raw=true" />
+</p>
+2. Robot grabbed a silver token:
+<p align="center">
+  <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/grab.png?raw=true" />
+</p>
+3. Robot release a silver token next to a silver token:
+<p align="center">
+  <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/release.png?raw=true" />
+</p>
+4. Ultimately, each silver token is placed next to a gold token
+<p align="center">
+  <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/final.png?raw=true" />
+</p>
+Also, on the terminal, some messages are displayed while the robot is in operation.:
+<p align="center">
+  <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/My%20project-1.png?raw=true" />
+</p>
+## possible improvements
