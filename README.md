@@ -53,7 +53,7 @@ Now, run the simulation:
 ```shell
 python2 run.py assignment.py
 ```
-The following simulation will be show:
+The following simulation will be shown:
 
 <p align="center">
   <img src="https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/initial.png?raw=true" />
