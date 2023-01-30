@@ -1,7 +1,11 @@
 """
-To reach the goal the robot will look for tokens in front of it and choose the closest one, go to it and grab it. 
-After grabbing the token the robot will turn looking for closest gold token in front of it, go to the closest one and once it is close enought to it will release the silver token.
-This will be done untill every silver token is with a different gold token.
+In order to accomplish the assignment, the robot will look 
+for tokens in front of it and grab the nearest one.
+Once the robot has grabbed the silver token, it will look for 
+a gold token in front of it, move near it, and release the 
+silver token once it is close enough.
+Silver tokens will be placed next to gold tokens until every 
+silver token is next to a different gold token.
 
 """
 
@@ -14,7 +18,6 @@ from sr.robot import * # for robot object
 
 
 # define global variables
-
 R = Robot() # robot object
 my_time = .5 # turn and drive time
 my_speed = 25 # turn and drive speed
@@ -50,7 +53,7 @@ def turn(speed, seconds):
 def interface(command):
 	os.system('clear')
 	print('###################################################################')
-	print("                           Robot's interface                      ")
+	print("##                         Robot's interface                     ##")
 	print('###################################################################\n\n')
 
 	if command is "start":
@@ -182,7 +185,6 @@ def search_token(token_type, token_list):
 		# if a token is found, return its distance, angle and code
 		return distance, rotation_y, token_code
 
-###########################################################################################
 
 
 
@@ -197,8 +199,6 @@ def refresh_position(token_type,target_code):
 		
 	return -1, -1
 
-
-###########################################################################################
 
 
 # token_code: code of the silver token
@@ -233,12 +233,7 @@ def go_to_gold(token_code):
 			interface("deliver")
 			distance, rotation_y = refresh_position(MARKER_TOKEN_GOLD,gold_token_code)
 
-		# reset increment and lock
-
 		find_gold_flag = True
-
-		# if close enough to the gold token, release the silver token and mark it as visited
-
 
 		#if the gold token is close enough, release the silver token and save them in their list 
 		if distance < distance_th * 1.5:
@@ -248,7 +243,7 @@ def go_to_gold(token_code):
 			R.release()
 			interface("release")
 
-			#marks the tokens
+			#marks the moved silver token and visited gold token
 			silver_token_list.append(token_code)
 			gold_token_list.append(gold_token_code)
 			find_gold_flag = False
@@ -267,8 +262,6 @@ def go_to_gold(token_code):
 			drive(25, my_time)
 
 
-# This if statement is used to run the code only when the file is executed
-# if __name__=="__main__":
 interface("start")
 # This function is used to grab all 6 silver tokens and deliver them to the gold token
 grab_silver_tokens(6)
