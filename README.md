@@ -55,6 +55,7 @@ The flowchart of the algorithm is:
 > ![flowchart](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/flowchart.jpg?raw=true "flowchart")
 
 As we can see in the images, the robot performs the following actions to achieve the goal of the assignment:
+
 1. Robot is in its initial position:
 ![initial](https://github.com/PeymanPP5530/research-track-1-assignment1/blob/main/README%20images/initial.png?raw=true "initial")
 
